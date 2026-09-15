@@ -51,3 +51,4 @@ GoogleService-Info.plist
 # Temporary files
 *.swp
 *~
+SocialNetwork/GoogleService-Info.plist
