@@ -84,7 +84,8 @@ extension LoginViewController: LoginScreenDelegate {
     }
     
     func tappedRegisterButton() {
-        showAlert(title: "Atenção", message: "A funcionalidade de fazer o registro será implementada em breve.")
+        let registerViewController = RegisterViewController()
+        navigationController?.pushViewController(registerViewController, animated: true)
     }
 }
 
