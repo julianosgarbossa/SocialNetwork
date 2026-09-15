@@ -54,7 +54,7 @@ class LoginScreen: UIView {
         label.text = "Que bom ter você aqui."
         label.numberOfLines = 1
         label.textAlignment = .left
-        label.font = UIFont.systemFont(ofSize: 26, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 24, weight: .bold)
         return label
     }()
     
