@@ -1,0 +1,54 @@
+{
+  "story": [
+    {
+      "image": "img1",
+      "userName": "add story"
+    },
+    {
+      "image": "img2",
+      "userName": "juliano"
+    },
+    {
+      "image": "img3",
+      "userName": "paula"
+    },
+    {
+      "image": "img4",
+      "userName": "jonas"
+    },
+    {
+      "image": "img5",
+      "userName": "julia"
+    },
+    {
+      "image": "img6",
+      "userName": "chuck"
+    },
+    {
+      "image": "img7",
+      "userName": "samuel_oliveira"
+    }
+  ],
+  "post": [
+    {
+      "profileImage": "img3",
+      "userName": "Paula",
+      "postImage": "post1"
+    },
+    {
+      "profileImage": "img5",
+      "userName": "Julia",
+      "postImage": "post2"
+    },
+    {
+      "profileImage": "img2",
+      "userName": "Juliano",
+      "postImage": "post3"
+    },
+    {
+      "profileImage": "img4",
+      "userName": "Jonas",
+      "postImage": "post4"
+    }
+  ]
+}

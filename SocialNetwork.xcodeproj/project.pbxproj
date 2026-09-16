@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A626544305ACF4B00CD61F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3A626543305ACF4B00CD61F6 /* Alamofire */; };
 		3A6493113059854700A13CF6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6493103059854700A13CF6 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A6493113059854700A13CF6 /* FirebaseAuth in Frameworks */,
+				3A626544305ACF4B00CD61F6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 			name = SocialNetwork;
 			packageProductDependencies = (
 				3A6493103059854700A13CF6 /* FirebaseAuth */,
+				3A626543305ACF4B00CD61F6 /* Alamofire */,
 			);
 			productName = SocialNetwork;
 			productReference = 3A649285305976FF00A13CF6 /* SocialNetwork.app */;
@@ -115,6 +118,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				3A64930F3059854700A13CF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3A626542305ACF4B00CD61F6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3A649286305976FF00A13CF6 /* Products */;
@@ -175,7 +179,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -211,7 +215,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,6 +368,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3A626542305ACF4B00CD61F6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.2;
+			};
+		};
 		3A64930F3059854700A13CF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -375,6 +387,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A626543305ACF4B00CD61F6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A626542305ACF4B00CD61F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		3A6493103059854700A13CF6 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3A64930F3059854700A13CF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

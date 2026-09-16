@@ -92,7 +92,10 @@ extension LoginViewController: LoginScreenDelegate {
 extension LoginViewController: LoginViewModelDelegate {
     func loginSuccess() {
         screen?.clearTextFields()
-        showAlert(title: "Sucesso", message: "Login efetuado com sucesso!")
+        let homeViewController = HomeViewController()
+        homeViewController.modalPresentationStyle = .fullScreen
+        homeViewController.modalTransitionStyle = .flipHorizontal
+        present(homeViewController, animated: true)
     }
     
     func loginFailure(error: String) {
