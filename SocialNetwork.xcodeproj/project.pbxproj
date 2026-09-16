@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1975CE305B3585007052B2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1975CD305B3585007052B2 /* FirebaseCrashlytics */; };
 		3A626544305ACF4B00CD61F6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3A626543305ACF4B00CD61F6 /* Alamofire */; };
 		3A6493113059854700A13CF6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A6493103059854700A13CF6 /* FirebaseAuth */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1975CE305B3585007052B2 /* FirebaseCrashlytics in Frameworks */,
 				3A6493113059854700A13CF6 /* FirebaseAuth in Frameworks */,
 				3A626544305ACF4B00CD61F6 /* Alamofire in Frameworks */,
 			);
@@ -49,10 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A1975CC305B3585007052B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3A64927C305976FF00A13CF6 = {
 			isa = PBXGroup;
 			children = (
 				3A649287305976FF00A13CF6 /* SocialNetwork */,
+				3A1975CC305B3585007052B2 /* Frameworks */,
 				3A649286305976FF00A13CF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +85,7 @@
 				3A649281305976FF00A13CF6 /* Sources */,
 				3A649282305976FF00A13CF6 /* Frameworks */,
 				3A649283305976FF00A13CF6 /* Resources */,
+				3A1975CF305B3631007052B2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -87,6 +98,7 @@
 			packageProductDependencies = (
 				3A6493103059854700A13CF6 /* FirebaseAuth */,
 				3A626543305ACF4B00CD61F6 /* Alamofire */,
+				3A1975CD305B3585007052B2 /* FirebaseCrashlytics */,
 			);
 			productName = SocialNetwork;
 			productReference = 3A649285305976FF00A13CF6 /* SocialNetwork.app */;
@@ -140,6 +152,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A1975CF305B3631007052B2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}.debug.dylib",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A649281305976FF00A13CF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -158,6 +197,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 2YF7DP2JBR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SocialNetwork/Info.plist;
@@ -387,6 +427,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3A1975CD305B3585007052B2 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A64930F3059854700A13CF6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
 		3A626543305ACF4B00CD61F6 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3A626542305ACF4B00CD61F6 /* XCRemoteSwiftPackageReference "Alamofire" */;
