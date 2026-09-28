@@ -16,7 +16,7 @@
 
 ## 📱 Sobre o projeto
 
-O **SocialNetwork** é um aplicativo iOS com cadastro e login por e-mail e senha. Depois de entrar, o usuário encontra uma tela inicial com stories e publicações, pode interagir com a animação de curtida por toque duplo em uma imagem e encerrar a sessão.
+O **SocialNetwork** é um aplicativo iOS que simula a experiência de uma rede social. Depois de realizar o cadastro e o login, o usuário vai se deparar com uma tela inicial que contém stories e publicações, onde ele pode interagir com a animação de curtida por toque duplo em uma imagem e encerrar a sessão.
 
 O projeto foi desenvolvido em **Swift**, com **UIKit em View Code** e organização **MVVM**. O **Firebase Authentication** cuida das contas, e o **Firebase Crashlytics** está configurado para coletar relatórios de falhas. Os dados exibidos na home são carregados de um JSON remoto por `URLSession`; o projeto também contém alternativas com Alamofire e um JSON local.
 
